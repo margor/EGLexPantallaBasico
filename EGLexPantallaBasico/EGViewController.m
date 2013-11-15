@@ -18,9 +18,16 @@
 {
     [super viewDidLoad];
     
+//    UITapGestureRecognizer * gesto = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(animacionMovimiento:)];
+//    [self.view addGestureRecognizer:gesto];
+    
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
     UITapGestureRecognizer * gesto = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(animacionMovimiento:)];
     [self.view addGestureRecognizer:gesto];
-    
+
 }
 
 -(void)animacionMovimiento: (UIGestureRecognizer*) recognizer {
