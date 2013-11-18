@@ -23,6 +23,11 @@
 		D0FE31A018364E100003471B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0FE319E18364E100003471B /* InfoPlist.strings */; };
 		D0FE31A218364E100003471B /* EGLexPantallaBasicoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FE31A118364E100003471B /* EGLexPantallaBasicoTests.m */; };
 		D0FE31AE18364F920003471B /* circulo.png in Resources */ = {isa = PBXBuildFile; fileRef = D0FE31AD18364F920003471B /* circulo.png */; };
+		D0FE31B118377F570003471B /* EGRedondelLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FE31B018377F570003471B /* EGRedondelLayerVC.m */; };
+		D0FE31B5183950A60003471B /* EGAnimationLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FE31B4183950A60003471B /* EGAnimationLayerVC.m */; };
+		D0FE31B9183A03710003471B /* EGAnimationGroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FE31B8183A03710003471B /* EGAnimationGroupVC.m */; };
+		D0FE31BD183A15C70003471B /* EGTablaMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FE31BC183A15C70003471B /* EGTablaMenuCell.m */; };
+		D0FE31C1183A18EA0003471B /* EGTablaMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FE31C0183A18EA0003471B /* EGTablaMenuVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +62,16 @@
 		D0FE319F18364E100003471B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D0FE31A118364E100003471B /* EGLexPantallaBasicoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EGLexPantallaBasicoTests.m; sourceTree = "<group>"; };
 		D0FE31AD18364F920003471B /* circulo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = circulo.png; path = ../circulo.png; sourceTree = "<group>"; };
+		D0FE31AF18377F570003471B /* EGRedondelLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGRedondelLayerVC.h; sourceTree = "<group>"; };
+		D0FE31B018377F570003471B /* EGRedondelLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGRedondelLayerVC.m; sourceTree = "<group>"; };
+		D0FE31B3183950A60003471B /* EGAnimationLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGAnimationLayerVC.h; sourceTree = "<group>"; };
+		D0FE31B4183950A60003471B /* EGAnimationLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGAnimationLayerVC.m; sourceTree = "<group>"; };
+		D0FE31B7183A03710003471B /* EGAnimationGroupVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGAnimationGroupVC.h; sourceTree = "<group>"; };
+		D0FE31B8183A03710003471B /* EGAnimationGroupVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGAnimationGroupVC.m; sourceTree = "<group>"; };
+		D0FE31BB183A15C70003471B /* EGTablaMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGTablaMenuCell.h; sourceTree = "<group>"; };
+		D0FE31BC183A15C70003471B /* EGTablaMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGTablaMenuCell.m; sourceTree = "<group>"; };
+		D0FE31BF183A18EA0003471B /* EGTablaMenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGTablaMenuVC.h; sourceTree = "<group>"; };
+		D0FE31C0183A18EA0003471B /* EGTablaMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGTablaMenuVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,10 +136,14 @@
 				D0FE318318364E100003471B /* EGAppDelegate.m */,
 				D0FE318518364E100003471B /* Main_iPhone.storyboard */,
 				D0FE318818364E100003471B /* Main_iPad.storyboard */,
-				D0FE318B18364E100003471B /* EGViewController.h */,
-				D0FE318C18364E100003471B /* EGViewController.m */,
+				D0FE31BE183A15CB0003471B /* EGTablaMenuCell */,
+				D0FE31C2183A18F30003471B /* EGTablaMenuVC */,
 				D0FE318E18364E100003471B /* Images.xcassets */,
 				D0FE317A18364E100003471B /* Supporting Files */,
+				D0FE31C3183A30810003471B /* EGViewController */,
+				D0FE31B218377F5D0003471B /* EGRedondelLayerVC */,
+				D0FE31B6183950AB0003471B /* EGAnimationLayerVC */,
+				D0FE31BA183A03750003471B /* EGAnimationGroupVC */,
 			);
 			path = EGLexPantallaBasico;
 			sourceTree = "<group>";
@@ -156,6 +175,60 @@
 				D0FE319E18364E100003471B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0FE31B218377F5D0003471B /* EGRedondelLayerVC */ = {
+			isa = PBXGroup;
+			children = (
+				D0FE31AF18377F570003471B /* EGRedondelLayerVC.h */,
+				D0FE31B018377F570003471B /* EGRedondelLayerVC.m */,
+			);
+			name = EGRedondelLayerVC;
+			sourceTree = "<group>";
+		};
+		D0FE31B6183950AB0003471B /* EGAnimationLayerVC */ = {
+			isa = PBXGroup;
+			children = (
+				D0FE31B3183950A60003471B /* EGAnimationLayerVC.h */,
+				D0FE31B4183950A60003471B /* EGAnimationLayerVC.m */,
+			);
+			name = EGAnimationLayerVC;
+			sourceTree = "<group>";
+		};
+		D0FE31BA183A03750003471B /* EGAnimationGroupVC */ = {
+			isa = PBXGroup;
+			children = (
+				D0FE31B7183A03710003471B /* EGAnimationGroupVC.h */,
+				D0FE31B8183A03710003471B /* EGAnimationGroupVC.m */,
+			);
+			name = EGAnimationGroupVC;
+			sourceTree = "<group>";
+		};
+		D0FE31BE183A15CB0003471B /* EGTablaMenuCell */ = {
+			isa = PBXGroup;
+			children = (
+				D0FE31BB183A15C70003471B /* EGTablaMenuCell.h */,
+				D0FE31BC183A15C70003471B /* EGTablaMenuCell.m */,
+			);
+			name = EGTablaMenuCell;
+			sourceTree = "<group>";
+		};
+		D0FE31C2183A18F30003471B /* EGTablaMenuVC */ = {
+			isa = PBXGroup;
+			children = (
+				D0FE31BF183A18EA0003471B /* EGTablaMenuVC.h */,
+				D0FE31C0183A18EA0003471B /* EGTablaMenuVC.m */,
+			);
+			name = EGTablaMenuVC;
+			sourceTree = "<group>";
+		};
+		D0FE31C3183A30810003471B /* EGViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D0FE318B18364E100003471B /* EGViewController.h */,
+				D0FE318C18364E100003471B /* EGViewController.m */,
+			);
+			name = EGViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +330,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0FE31C1183A18EA0003471B /* EGTablaMenuVC.m in Sources */,
+				D0FE31BD183A15C70003471B /* EGTablaMenuCell.m in Sources */,
+				D0FE31B118377F570003471B /* EGRedondelLayerVC.m in Sources */,
 				D0FE318D18364E100003471B /* EGViewController.m in Sources */,
 				D0FE318418364E100003471B /* EGAppDelegate.m in Sources */,
+				D0FE31B9183A03710003471B /* EGAnimationGroupVC.m in Sources */,
+				D0FE31B5183950A60003471B /* EGAnimationLayerVC.m in Sources */,
 				D0FE318018364E100003471B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
