@@ -69,22 +69,22 @@
     
     // Configure the cell...
     if (indexPath.row == 0){
-        cell.redondelView.backgroundColor = [UIColor orangeColor];
+        cell.redondelView.backgroundColor = [UIColor colorWithRed:237/255.f green:126/255.f blue:63/255.f alpha:1.000];
         cell.explicacionTextView.text = @"Pelota con imageView y animación con animateWithDuration";
     }
     
     else if (indexPath.row == 1){
-        cell.redondelView.backgroundColor = [UIColor colorWithRed:0.053 green:0.723 blue:0.587 alpha:1.000];
+        cell.redondelView.backgroundColor = [UIColor colorWithRed:41/255.f green:155/255.f blue:124/255.f alpha:1.000];
         cell.explicacionTextView.text = @"Pelota con CALayer y animación con animateWithDuration";
     }
     
     else if (indexPath.row == 2){
-        cell.redondelView.backgroundColor = [UIColor colorWithRed:0.627 green:0.045 blue:0.424 alpha:1.000];
+        cell.redondelView.backgroundColor = [UIColor colorWithRed:209/255.f green:56/255.f blue:107/255.f alpha:1.000];
         cell.explicacionTextView.text = @"Pelota con CALayer y animación con CAAnimationGroup";
     }
     
     else if (indexPath.row == 3){
-        cell.redondelView.backgroundColor = [UIColor colorWithRed:0.906 green:0.779 blue:0.032 alpha:1.000];
+        cell.redondelView.backgroundColor = [UIColor colorWithRed:0.782 green:0.784 blue:0.181 alpha:1.000];
         cell.explicacionTextView.text = @"Pelota con CALayer y animación con CAAnimationGroup y CAKeyframeAnimation";
     }
     
