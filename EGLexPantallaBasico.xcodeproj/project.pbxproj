@@ -28,6 +28,10 @@
 		D0FE31B9183A03710003471B /* EGAnimationGroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FE31B8183A03710003471B /* EGAnimationGroupVC.m */; };
 		D0FE31BD183A15C70003471B /* EGTablaMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FE31BC183A15C70003471B /* EGTablaMenuCell.m */; };
 		D0FE31C1183A18EA0003471B /* EGTablaMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FE31C0183A18EA0003471B /* EGTablaMenuVC.m */; };
+		D0FE3216183A95770003471B /* estrellas.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D0FE3214183A95770003471B /* estrellas.jpeg */; };
+		D0FE3218183A96680003471B /* sun.png in Resources */ = {isa = PBXBuildFile; fileRef = D0FE3217183A96680003471B /* sun.png */; };
+		D0FE321B183A97330003471B /* EGPlanetarioVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FE321A183A97330003471B /* EGPlanetarioVC.m */; };
+		D0FE321E183AA2700003471B /* Enterprise.png in Resources */ = {isa = PBXBuildFile; fileRef = D0FE321D183AA2700003471B /* Enterprise.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +76,11 @@
 		D0FE31BC183A15C70003471B /* EGTablaMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGTablaMenuCell.m; sourceTree = "<group>"; };
 		D0FE31BF183A18EA0003471B /* EGTablaMenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGTablaMenuVC.h; sourceTree = "<group>"; };
 		D0FE31C0183A18EA0003471B /* EGTablaMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGTablaMenuVC.m; sourceTree = "<group>"; };
+		D0FE3214183A95770003471B /* estrellas.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = estrellas.jpeg; sourceTree = "<group>"; };
+		D0FE3217183A96680003471B /* sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sun.png; sourceTree = "<group>"; };
+		D0FE3219183A97330003471B /* EGPlanetarioVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGPlanetarioVC.h; sourceTree = "<group>"; };
+		D0FE321A183A97330003471B /* EGPlanetarioVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGPlanetarioVC.m; sourceTree = "<group>"; };
+		D0FE321D183AA2700003471B /* Enterprise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Enterprise.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,9 @@
 				D0FE319B18364E100003471B /* EGLexPantallaBasicoTests */,
 				D0FE317218364E100003471B /* Frameworks */,
 				D0FE317118364E100003471B /* Products */,
+				D0FE3214183A95770003471B /* estrellas.jpeg */,
+				D0FE3217183A96680003471B /* sun.png */,
+				D0FE321D183AA2700003471B /* Enterprise.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +156,7 @@
 				D0FE31B218377F5D0003471B /* EGRedondelLayerVC */,
 				D0FE31B6183950AB0003471B /* EGAnimationLayerVC */,
 				D0FE31BA183A03750003471B /* EGAnimationGroupVC */,
+				D0FE321C183A97380003471B /* EGPlanetarioVC */,
 			);
 			path = EGLexPantallaBasico;
 			sourceTree = "<group>";
@@ -231,6 +244,16 @@
 			name = EGViewController;
 			sourceTree = "<group>";
 		};
+		D0FE321C183A97380003471B /* EGPlanetarioVC */ = {
+			isa = PBXGroup;
+			children = (
+				D0FE3219183A97330003471B /* EGPlanetarioVC.h */,
+				D0FE321A183A97330003471B /* EGPlanetarioVC.m */,
+			);
+			name = EGPlanetarioVC;
+			path = ..;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -307,7 +330,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0FE3218183A96680003471B /* sun.png in Resources */,
 				D0FE318A18364E100003471B /* Main_iPad.storyboard in Resources */,
+				D0FE321E183AA2700003471B /* Enterprise.png in Resources */,
+				D0FE3216183A95770003471B /* estrellas.jpeg in Resources */,
 				D0FE318F18364E100003471B /* Images.xcassets in Resources */,
 				D0FE318718364E100003471B /* Main_iPhone.storyboard in Resources */,
 				D0FE31AE18364F920003471B /* circulo.png in Resources */,
@@ -336,6 +362,7 @@
 				D0FE318D18364E100003471B /* EGViewController.m in Sources */,
 				D0FE318418364E100003471B /* EGAppDelegate.m in Sources */,
 				D0FE31B9183A03710003471B /* EGAnimationGroupVC.m in Sources */,
+				D0FE321B183A97330003471B /* EGPlanetarioVC.m in Sources */,
 				D0FE31B5183950A60003471B /* EGAnimationLayerVC.m in Sources */,
 				D0FE318018364E100003471B /* main.m in Sources */,
 			);

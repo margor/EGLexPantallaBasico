@@ -16,12 +16,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="circulo.png" translatesAutoresizingMaskIntoConstraints="NO" id="JN9-yG-KuY">
-                                <rect key="frame" x="0.0" y="36" width="150" height="150"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circulo.png" translatesAutoresizingMaskIntoConstraints="NO" id="JN9-yG-KuY">
+                                <rect key="frame" x="0.0" y="64" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Bif-OG-gkT"/>
+                                    <constraint firstAttribute="height" constant="150" id="TLf-wh-cPV"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JN9-yG-KuY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="6RY-xr-Iyf"/>
+                            <constraint firstItem="JN9-yG-KuY" firstAttribute="top" secondItem="1qI-mp-90d" secondAttribute="bottom" id="hj1-fI-gdY"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9dP-2l-PEp"/>
                     <connections>
@@ -32,14 +40,15 @@
             </objects>
             <point key="canvasLocation" x="305" y="-400"/>
         </scene>
-        <!--Tabla MenuVC - Pelota animada-->
+        <!--Tabla MenuVC - Prácticas LexCode1-->
         <scene sceneID="Ncn-l5-Uny">
             <objects>
                 <tableViewController id="djw-rA-zrp" customClass="EGTablaMenuVC" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="105" sectionHeaderHeight="22" sectionFooterHeight="22" id="w14-kb-8b5">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="105" sectionHeaderHeight="22" sectionFooterHeight="22" id="w14-kb-8b5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Celda" rowHeight="105" id="IVm-RP-Toa" customClass="EGTablaMenuCell">
                                 <rect key="frame" x="0.0" y="86" width="320" height="105"/>
@@ -48,35 +57,35 @@
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="104"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qsc-DJ-Lxt">
-                                            <rect key="frame" x="217" y="5" width="70" height="94"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </view>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKr-1P-qGo">
                                             <rect key="frame" x="20" y="5" width="189" height="94"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="189" id="DcR-zV-td6"/>
-                                            </constraints>
                                             <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qh8-IU-lXx">
+                                            <rect key="frame" x="217" y="17" width="70" height="70"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="70" id="FxK-A2-UQn"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="PKr-1P-qGo" firstAttribute="bottom" secondItem="qsc-DJ-Lxt" secondAttribute="bottom" id="3Bv-BY-Azn"/>
                                         <constraint firstItem="PKr-1P-qGo" firstAttribute="top" secondItem="zvH-2h-4OZ" secondAttribute="top" constant="5" id="5ZO-pG-hHR"/>
                                         <constraint firstAttribute="centerY" secondItem="PKr-1P-qGo" secondAttribute="centerY" id="8kH-pV-cO1"/>
-                                        <constraint firstItem="PKr-1P-qGo" firstAttribute="top" secondItem="qsc-DJ-Lxt" secondAttribute="top" id="TCS-93-8DM"/>
-                                        <constraint firstAttribute="trailing" secondItem="qsc-DJ-Lxt" secondAttribute="trailing" id="jlt-hZ-PL5"/>
+                                        <constraint firstItem="qh8-IU-lXx" firstAttribute="centerY" secondItem="PKr-1P-qGo" secondAttribute="centerY" id="GXA-aY-AFM"/>
+                                        <constraint firstAttribute="trailing" secondItem="qh8-IU-lXx" secondAttribute="trailing" id="ega-Ux-3pW"/>
                                         <constraint firstItem="PKr-1P-qGo" firstAttribute="leading" secondItem="zvH-2h-4OZ" secondAttribute="leading" constant="20" symbolic="YES" id="lGJ-vZ-kma"/>
-                                        <constraint firstItem="qsc-DJ-Lxt" firstAttribute="leading" secondItem="PKr-1P-qGo" secondAttribute="trailing" constant="8" symbolic="YES" id="nnE-Bw-eOc"/>
+                                        <constraint firstItem="qh8-IU-lXx" firstAttribute="top" secondItem="zvH-2h-4OZ" secondAttribute="top" constant="17" id="mpR-bj-uHx"/>
+                                        <constraint firstItem="qh8-IU-lXx" firstAttribute="leading" secondItem="PKr-1P-qGo" secondAttribute="trailing" constant="8" symbolic="YES" id="zkz-Hx-3M4"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="explicacionTextView" destination="PKr-1P-qGo" id="GLL-YG-5bB"/>
-                                    <outlet property="redondelView" destination="qsc-DJ-Lxt" id="wJo-PV-QSk"/>
+                                    <outlet property="redondelView" destination="qh8-IU-lXx" id="wgx-dV-Fk5"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -85,17 +94,86 @@
                             <outlet property="delegate" destination="djw-rA-zrp" id="9Db-5g-6fh"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Pelota animada" id="VDF-bO-geT"/>
+                    <navigationItem key="navigationItem" title="Prácticas LexCode1" id="VDF-bO-geT"/>
                     <connections>
                         <segue destination="DqP-ea-Zr6" kind="push" identifier="irAAnimationLayer" id="xKA-20-czI"/>
                         <segue destination="GLZ-mC-HWq" kind="push" identifier="irAAnimationGroup" id="iUt-94-jlY"/>
                         <segue destination="vXZ-lx-hvc" kind="push" identifier="irAViewController" id="zSM-oK-BAK"/>
                         <segue destination="iMf-tM-Weh" kind="push" identifier="irARedondelLayer" id="7AW-JP-riv"/>
+                        <segue destination="3Sj-Df-u4e" kind="push" identifier="irAPlanetario" id="hVB-1U-W3v"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c8N-p1-e4d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-48" y="469"/>
+        </scene>
+        <!--PlanetarioVC-->
+        <scene sceneID="KsP-KA-0ru">
+            <objects>
+                <viewController id="3Sj-Df-u4e" customClass="EGPlanetarioVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dHj-NV-hiL"/>
+                        <viewControllerLayoutGuide type="bottom" id="nlC-kV-8Yj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g4z-DB-01E">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun.png" translatesAutoresizingMaskIntoConstraints="NO" id="6t0-cc-sWj">
+                                <rect key="frame" x="96" y="176" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="PD8-CQ-apa"/>
+                                    <constraint firstAttribute="height" constant="128" id="g8m-hl-3ZK"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dL-2S-dOX">
+                                <rect key="frame" x="137" y="74" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3bI-g6-g0C"/>
+                                    <constraint firstAttribute="width" constant="48" id="K43-qh-yEa"/>
+                                </constraints>
+                                <state key="normal" title="Orbitar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="animarButton:" destination="3Sj-Df-u4e" eventType="touchUpInside" id="zZU-3f-WT2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsM-JE-nfX">
+                                <rect key="frame" x="52" y="430" width="218" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="218" id="K9g-5s-ZyS"/>
+                                    <constraint firstAttribute="height" constant="30" id="THV-Cc-rhl"/>
+                                </constraints>
+                                <state key="normal" title="Crear estrellas en el firmamento">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="crearEstrellasButton:" destination="3Sj-Df-u4e" eventType="touchUpInside" id="d7v-jE-OG0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="lsM-JE-nfX" secondAttribute="centerX" constant="-1" id="F3H-Sn-P3k"/>
+                            <constraint firstItem="nlC-kV-8Yj" firstAttribute="top" secondItem="lsM-JE-nfX" secondAttribute="bottom" constant="20" id="VFE-DE-YD6"/>
+                            <constraint firstAttribute="centerY" secondItem="6t0-cc-sWj" secondAttribute="centerY" id="bCk-25-T2P"/>
+                            <constraint firstAttribute="centerX" secondItem="4dL-2S-dOX" secondAttribute="centerX" constant="-0.5" id="hXv-fJ-pM1"/>
+                            <constraint firstItem="4dL-2S-dOX" firstAttribute="top" secondItem="dHj-NV-hiL" secondAttribute="bottom" constant="10" id="qNH-E0-X3y"/>
+                            <constraint firstAttribute="centerX" secondItem="6t0-cc-sWj" secondAttribute="centerX" id="ySJ-GV-c50"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uGV-wW-eLD"/>
+                    <connections>
+                        <outlet property="sunImageView" destination="6t0-cc-sWj" id="0fr-6W-dMb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fl1-KN-92A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="421" y="1679"/>
         </scene>
         <!--Animation LayerVC-->
         <scene sceneID="L0N-0u-SjL">
@@ -175,6 +253,7 @@
     </scenes>
     <resources>
         <image name="circulo.png" width="300" height="300"/>
+        <image name="sun.png" width="666" height="660"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
