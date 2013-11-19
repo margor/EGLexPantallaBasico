@@ -26,6 +26,11 @@
     
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    altura = CGRectGetMaxY(self.view.bounds)/5;
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -131,6 +136,7 @@
         [self performSegueWithIdentifier:@"irAAnimationGroup" sender:indexPath];
     else if (indexPath.row == 4)
         [self performSegueWithIdentifier:@"irAPlanetario" sender:indexPath];
+    
     
 }
 

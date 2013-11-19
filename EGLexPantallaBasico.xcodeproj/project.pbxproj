@@ -32,6 +32,9 @@
 		D0FE3218183A96680003471B /* sun.png in Resources */ = {isa = PBXBuildFile; fileRef = D0FE3217183A96680003471B /* sun.png */; };
 		D0FE321B183A97330003471B /* EGPlanetarioVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FE321A183A97330003471B /* EGPlanetarioVC.m */; };
 		D0FE321E183AA2700003471B /* Enterprise.png in Resources */ = {isa = PBXBuildFile; fileRef = D0FE321D183AA2700003471B /* Enterprise.png */; };
+		D0FE3220183B86F10003471B /* nave.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0FE321F183B86F10003471B /* nave.mp3 */; };
+		D0FE3222183B8FD70003471B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FE3221183B8FD70003471B /* AudioToolbox.framework */; };
+		D0FE3224183B8FE10003471B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FE3223183B8FE10003471B /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +84,9 @@
 		D0FE3219183A97330003471B /* EGPlanetarioVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGPlanetarioVC.h; sourceTree = "<group>"; };
 		D0FE321A183A97330003471B /* EGPlanetarioVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGPlanetarioVC.m; sourceTree = "<group>"; };
 		D0FE321D183AA2700003471B /* Enterprise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Enterprise.png; sourceTree = "<group>"; };
+		D0FE321F183B86F10003471B /* nave.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nave.mp3; sourceTree = "<group>"; };
+		D0FE3221183B8FD70003471B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D0FE3223183B8FE10003471B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0FE3224183B8FE10003471B /* AVFoundation.framework in Frameworks */,
+				D0FE3222183B8FD70003471B /* AudioToolbox.framework in Frameworks */,
 				D0FE317618364E100003471B /* CoreGraphics.framework in Frameworks */,
 				D0FE317818364E100003471B /* UIKit.framework in Frameworks */,
 				D0FE317418364E100003471B /* Foundation.framework in Frameworks */,
@@ -117,6 +125,7 @@
 				D0FE3214183A95770003471B /* estrellas.jpeg */,
 				D0FE3217183A96680003471B /* sun.png */,
 				D0FE321D183AA2700003471B /* Enterprise.png */,
+				D0FE321F183B86F10003471B /* nave.mp3 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +141,8 @@
 		D0FE317218364E100003471B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D0FE3223183B8FE10003471B /* AVFoundation.framework */,
+				D0FE3221183B8FD70003471B /* AudioToolbox.framework */,
 				D0FE317318364E100003471B /* Foundation.framework */,
 				D0FE317518364E100003471B /* CoreGraphics.framework */,
 				D0FE317718364E100003471B /* UIKit.framework */,
@@ -332,6 +343,7 @@
 			files = (
 				D0FE3218183A96680003471B /* sun.png in Resources */,
 				D0FE318A18364E100003471B /* Main_iPad.storyboard in Resources */,
+				D0FE3220183B86F10003471B /* nave.mp3 in Resources */,
 				D0FE321E183AA2700003471B /* Enterprise.png in Resources */,
 				D0FE3216183A95770003471B /* estrellas.jpeg in Resources */,
 				D0FE318F18364E100003471B /* Images.xcassets in Resources */,

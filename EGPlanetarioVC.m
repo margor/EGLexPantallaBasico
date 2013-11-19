@@ -7,9 +7,12 @@
 //
 
 #import "EGPlanetarioVC.h"
+#import <AudioToolbox/AudioToolbox.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface EGPlanetarioVC (){
     UIImageView *enterpriseImageView;
+    AVAudioPlayer *player;
 }
 
 @end
@@ -104,6 +107,15 @@
     
     [orbitaLayer addAnimation:rotationAnimation forKey:@"dandovueltas"];
     [tierraLayer addAnimation:rotationAnimation forKey:@"dandovueltas"];
+    
+    
+    NSString *sonidoPath = [[NSBundle mainBundle] pathForResource:@"nave" ofType:@"mp3"];
+    NSURL *soundFileURL = [NSURL fileURLWithPath:sonidoPath];
+    
+    player = [[AVAudioPlayer alloc] initWithContentsOfURL:soundFileURL error:nil];
+    player.numberOfLoops = 0;
+    
+    [player play];
     
 }
 
